@@ -1,0 +1,8 @@
+2021/02/09-15:47:09.856 5834 Reusing MANIFEST C:\Users\kyryl\Desktop\Проекты по проге\MusConv\bin\Debug\MusConv.exe.WebView2\EBWebView\Default\IndexedDB\https_connect.deezer.com_0.indexeddb.leveldb/MANIFEST-000001
+2021/02/09-15:47:09.856 5834 Recovering log #133
+2021/02/09-15:47:09.856 5834 Reusing old log C:\Users\kyryl\Desktop\Проекты по проге\MusConv\bin\Debug\MusConv.exe.WebView2\EBWebView\Default\IndexedDB\https_connect.deezer.com_0.indexeddb.leveldb/000133.log 
+2021/02/09-15:47:16.265 543c Level-0 table #137: started
+2021/02/09-15:47:16.265 543c Level-0 table #137: 0 bytes OK
+2021/02/09-15:47:16.269 543c Delete type=0 #133
+2021/02/09-15:47:16.270 543c Manual compaction at level-0 from (begin) .. (end); will stop at (end)
+2021/02/09-15:47:16.270 543c Manual compaction at level-1 from (begin) .. (end); will stop at (end)
