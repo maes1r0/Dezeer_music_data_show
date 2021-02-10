@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:MusConv"
         xmlns:wv2="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
         mc:Ignorable="d"
-        Title="AuthWindow" Height="450" Width="700">
+        Title="AuthWindow" Height="450" Width="700" Closing="Window_Closing">
     <Grid>
-        <wv2:WebView2 Name="deezerAuth" NavigationStarting="deezerAuth_NavigationStarting" />
+        <wv2:WebView2 Name="deezerAuth" NavigationStarting="deezerAuth_NavigationStarting"  />
     </Grid>
 </Window>
