@@ -1,0 +1,40 @@
+﻿<Window x:Class="MusConv.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MusConv.View"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.2*"/>
+            <ColumnDefinition />
+            <ColumnDefinition Width="0.2*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.05*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Column="3">
+            <Button Name="loginButton" Margin="40,0,0,0" Content="Login" Click="loginButton_Click"/>
+            <TextBlock x:Name="userName" Text="{Binding UserName, UpdateSourceTrigger=PropertyChanged}" Visibility="Collapsed" >
+            </TextBlock>
+        </Grid>
+        <Grid Grid.Row="2">
+            <StackPanel Orientation="Vertical">
+                <Button Content="Playlists" Command="{Binding GetPlaylistsCommand}"/>
+                <Button Content="Folowed atrists" Command="{Binding GetFolowedArtistsCommand}"/>
+                <Button Content="Liked album" Command="{Binding GetLikedAlbumCommand}"/>
+                <Button Content="Liked tracks" Command="{Binding GetLikedTracksCommand}"/>
+            </StackPanel>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <StackPanel Orientation="Vertical" Visibility="Collapsed"/>
+            <StackPanel Orientation="Vertical" Visibility="Collapsed"/>
+            <StackPanel Orientation="Vertical" Visibility="Collapsed"/>
+            <StackPanel Orientation="Vertical" Visibility="Collapsed"/>
+        </Grid>
+    </Grid>
+</Window>
